@@ -1,60 +1,283 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ian Carvalho - Machine Learning Engineer | Data Scientist | Python Expert</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bootstrap 4 Portfolio/Resume Theme for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar.css">
+    <!-- github activity css -->    
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
+    <link rel="stylesheet" href="assets/plugins/github-activity/github-activity-0.1.5.min.css">
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
 
-<div class="home">
+    
+</head> 
 
+<body>
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container clearfix">                       
+            <img class="profile-image img-fluid float-left" src="assets/images/profile.png" alt="James Lee" />
+            <div class="profile-content float-left">
+                <h1 class="name">Ian Carvalho</h1>
+                <h2 class="desc">Machine Learning Engineer | Data Scientist | Python Expert</h2>   
+                <ul class="social list-inline">
+                    <li class="list-inline-item"><a href="https://twitter.com/carv_ai"><i class="fab fa-twitter"></i></a></li>                   
+                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/iancarv"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="list-inline-item last-item"><a href="https://github.com/iancarv/"><i class="fab fa-github-alt"></i></a></li>             
+                </ul> 
+            </div><!--//profile-->
+            <a class="btn btn-cta-primary float-right" href="mailto:iancarv+portfolio@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>              
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p>I am a maker! I love building stuff (especially <a href="https://www.youtube.com/watch?v=KauRmlffjqc" target="_blank">dumb sh*t</a>). I've been involved with more interesting projects I can list here.</p>
+                            <p>In 2012, I've built the first <a href="#novo-pensar">educational augmented reality app</a> in Brazil, way before AR was cool. In 2014, I've built the first VR experience to be showcased at the Sao Paulo International book biennial, months before Oculus acquisition by Facebook was announced. </p>
+                            <p>My career is non-linear even in higher dimensional spaces. I’ve been an intern, developer, tech lead and CTO at one company, then freelancer and back to intern; researcher and back to intern; senior software engineer and back to intern. All that while doing my undergrad.<br>
+                                I am, by definition, a jack-of-all-trades, but now that I am finishing my Masters, I will be master of one. Also did I mention I am an intern again?</p>
+                                
+                                
+                            <p>I lived in two different countries, 10 different cities, started two degrees, finished one, speak 3 different languages, programmed professionally in 6, maybe by the time you read this I will be in a full-time position, or maybe at some point, I will start my PhD and likely will have to go back to being an intern. Who knows?
+                                <br>All I know all those changes allowed me to work at some very <a href="#lastest">exciting projects</a> during my life. 
 
-  {% for post in paginator.posts%}
-  <div class="post postContent">
-    <div  class="postDate"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
-    </div>
-    <div class="postTag">
-      {{post.tag}}
-    </div>
-    <br>
-    <div class="postTitle">
-    <a class='postLink' href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
-    </div>
-    <div class="postExt">
-   {{ post.content | strip_html | truncate:200}}
-    </div>
-  </div>
+                            </p>
+                                
+                                <p>Passion and willingness to learn made my trajectory quite unusual and that’s who I am: an unusual person. </p>
+                                
+                                <p>But I digress, those are some of the awesome (and some not so awesome) stuff I’ve done over the years.</p>
+                                
+                            </p>
+                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner">
+                        <h2 class="heading">Latest Projects</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                <h3 class="title"><a href="https://devpost.com/software/fbhackathon" target="_blank">Giggly</a></h3>
+                                <p class="summary">Bringing joy and entertainment to hospitalized children</p>
+                                <div class="featured-image has-ribbon">
+                                    <a href="https://www.youtube.com/watch?v=kc2pP8sBtHs" target="_blank">
+                                    <img class="img-fluid project-image" src="assets/images/projects/giggly.jpg" alt="Giggly" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                    </div>
+                                </div>
+                                    
+                                <div class="desc text-left">                                    
+                                    <p>How can we combat the loss of stimulation and empathy that may occur when children become hospitalized, and how do we ensure that their ties with the social world remain intact during their stay at the hospital? This Messenger Chatbot provides entertainment for hospitalized children by connect with a variety of services as Facebook Videos and Twitch. It uses voice processing technology enable kids with limited movement to interact with the chatbot.</p>
+                                </div><!--//desc-->         
+                                <a class="btn btn-cta-secondary" href="https://devpost.com/software/fbhackathon" target="_blank"><i class="fas fa-thumbs-up"></i> Read more</a>                 
+                            </div><!--//item-->
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="#" target="_blank"><img class="img-fluid project-image" src="assets/images/projects/project-1.png" alt="breast cancer" /></a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title">Deep Learning for Breast Cancer Detection</h3>
+                                    <p class="mb-2">Breast cancer is the most commonly occurring cancer in women and the second most common cancer overall. Being able to detect it early and efficiently can have a huge impact reducing the need for invasive techniques. For this project, I used a generative adversarial network (GAN) built in Python to detect malignant cancer cells in histopathology images.</p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="http://mycity.id/" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/project-2.png" alt="My City Id" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="http://mycity.id/" target="_blank">MyCity.ID</a></h3>
+                                    <p class="mb-2">MyCity.ID is a self-sovereign digital ID designed to improve the verification of identity-related information. It speeds up the process of applying for social services and benefits by using pre-verified information, making the process easier for residents and service providers. MyCity.ID uses a private blockchain network that keeps individuals' information secure and allows them to control who can see and use their ID.</p>
+                                    <p><a class="more-link" href="https://mycity.id/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                             <div class="item row">
+                                <a class="col-md-4 col-12" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/project-3.png" alt="Intro to Machine Learning" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/" target="_blank">Introduction to Machine Learning Course</a></h3>
+                                    <p class="mb-2">This introduction to Machine Learning course was built in partnership with <a href="http://platzi.com/">Platzi</a> for <a href="https://www.facebook.com/groups/DevCSaoPaulo">Facebook Developer Circles - São Paulo</a>. The course is focused on teaching the basic machine learning principles by building a model to analyse real estate data and predict house pricing.</p>
+                                    <p><a class="more-link" href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/startupkit-bootstrap-theme-for-saas-startups/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="http://noodle.cx/" target="_blank">
+                                <img class="img-fluid project-image" src="assets/images/projects/project-4.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="http://noodle.cx/" target="_blank">Noodle</a></h3>
+                                    <p class="mb-2">Stats and Insights on your favorite artist? Noodle is a tool that helps you keep track of your favorite artist. This web-application joins data from different sources as Youtube, Spotify, MusicBrainz and etc. and display this information at one simples dashboard. I created this to improve my skills with Elasticsearch - used for artist and song search & completion - and Airflow to build the data pipeline.</p>
+                                    <p><a class="more-link" href="http://noodle.cx/" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->                                                        
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                
+                </section><!--//section-->
+                
+                <section class="projects section">
+                    <div class="section-inner">
+                        <h2 class="heading">Other Projects</h2>
+                        <div class="content">
+                            <div class="item">
+                                <h3 class="title"><a href="#" target="_blank">BirdApps</a></h3>
+                                <p class="summary">Birds are amazing animals from both aesthetics and evolutive point of view. To show my love for birds, I decided to use them in order to learn transfer learning and YOLO. This application detect birds based on input of a camera on my garden. When a bird is detected, the program starts recording the footage and it classify the bird and its species, saving the result to a database.</p>
+                                <p></p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><a href="https://www.facebook.com/IBMResearch/videos/10157540162210273/" target="_blank">Kate - Machine Intelligence Project</a></h3>
+                                <p class="summary">During my internship at <a href="https://ibm.com">IBM</a> I collaborated with a team of three scientists and five interns to develop a software using C++ that controlled the walking mechanism of a bipedal robot.
+                                    For the project, we utilized a signal processing algorithm to handle information from the robot’s sensors and camera and create a machine learning model to predict an impending  fall. Created a software that would enable the robot to stop and regain balance upon an impending fall, increasing the robot’s steps, on average, by 500.
+                                    </p>
+                                <p><a class="more-link" href="https://www.facebook.com/IBMResearch/videos/10157540162210273/" target="_blank"><i class="fas fa-external-link-alt"></i>Learn More</a></p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><a href="#" target="_blank">Os Karas - VR</a> </h3>
+                                <p class="summary">In 2017, CCXP São Paulo was the biggest Comic Con in the world bringing 220.000 people to the event making it the biggest pop culture event in the world, with almost double of the size of original Comic Con.
+                                    <br>For this event, I developed with <a href="http://www.id2.com.br/">ID2 Design Agency</a> an Virtual Reality game that connected 22 people into a singles experience. In it, two players would compete against each other by destroying Decepticon drones. The remaining people were put in a expectator position and watch the whole gameplay.</p>
+                                <p><a class="more-link" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>Learn More</a></p>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><a href="#" target="_blank">Transformers - Virtual Reality</a> </h3>
+                                <p class="summary">For the 2014 Sao Paulo book biennial, I worked with a team of developers and 3D designers to create a Virtual Reality for the teenage book series “Os Karas”. During the experience, the user was taken to the hiding place where the group of students met to solve crimes and mysterious situations over the course of the series.</p>
+                                <p><a class="more-link" href="#" target="_blank"><i class="fas fa-external-link-alt"></i>Learn More</a></p>
+                            </div><!--//item-->
+                            <div class="item" id="novo-pensar">
+                                <h3 class="title"><a href="https://www.youtube.com/watch?v=vymmA-_2Emg" target="_blank">Ciências Novo Pensar - Augmented Reality</a> </h3>
+                                <p class="summary">Pioneer work developed to FTD, one of biggest brazilian book publishers. A companion app was developed to bring a digital and interactive layer to their educational book series. The app allowed students to visualize and interact with 3D models using book illustrations as AR target. It helped students better understand the solar system, human skeleton, among others.</p>
+                                <p><a class="more-link" href="https://www.youtube.com/watch?v=vymmA-_2Emg" target="_blank"><i class="fas fa-external-link-alt"></i>Learn More</a></p>
+                            </div><!--//item-->
+                            
+                            <!-- <a class="btn btn-cta-secondary" href="#">More on CoderWall <i class="fas fa-chevron-right"></i></a> -->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-map-marker-alt"></i><span class="sr-only">Location:</span>New York, US</li>
+                                <li><i class="fas fa-envelope"></i><span class="sr-only">Email:</span><a href="#">iancarv+portfolio@gmail.com</a></li>
+                                <li><i class="fas fa-link"></i><span class="sr-only">Website:</span><a href="#">http://iancarvalho.tech/</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> MSc Computer Science</h3>
+                                <h4 class="university">Pace University <span class="year">(2018-2019)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> BSc Computer Science</h3>
+                                <h4 class="university">Universidade de São Paulo<span class="year">(2013-2018)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
 
-  {% endfor %}
-  {% if paginator.total_pages > 1 %}
-    <nav class="pagination">
-      {% if paginator.previous_page %}
-        <a class="paginationLink" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
-      {% endif %}
+                <aside class="education aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Awards</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-trophy"></i> Hackathon - Facebook Dev Circle NY</h3>
+                                <h4 class="university">Best overall project <span class="year">(October 2019)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-trophy"></i> <a href="https://www.bigapps.nyc/home/call-for-proposals/">NYC BigApps Challenge</a></h3>
+                                <h4 class="university">Best Identity project  <span class="year">(September 2019)</span></h4>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fas fa-trophy"></i><a href="https://seidenbergnews.blogs.pace.edu/2019/06/10/seidenberg-student-wins-airbnb-pricing-challenge-on-westchester-campus/">Pace Data Science Competition</a></h3>
+                                <h4 class="university">Best overall model  <span class="year">(June 2019)</span></h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside class="languages aside section">
+                    <div class="section-inner">
+                        <h2 class="heading">Languages</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li class="item">
+                                            <span class="title"><strong>Portuguese:</strong></span>
+                                            <span class="level">Native Speaker <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                        </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>English:</strong></span>
+                                    <span class="level">Fluent <br class="visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> </span>
+                                </li><!--//item-->
+                                <li class="item">
+                                    <span class="title"><strong>Spanish:</strong></span>
+                                    <span class="level">Professional Proficiency <br class="visible-sm visible-xs"/><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star-half"></i></span>
+                                </li><!--//item-->
+                            </ul>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/github-activity-0.1.5.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
+</body>
+</html> 
 
-    {% for page in (1..paginator.total_pages) %}
-      {% if page == paginator.page %}
-        <em class="paginationLink paginationLinkCurrent">{{ page }}</em>
-      {% elsif page == 1 %}
-        <a class="paginationLink" href="/">{{ page }}</a>
-      {% else %}
-        <a class="paginationLink" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-      {% endif %}
-    {% endfor %}
-
-    {% if paginator.next_page %}
-      <a class="paginationLink" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
-    {% endif %}
-    </nav>
-  {% endif %}
-  <!--<ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>-->
-
-
-
-</div>
